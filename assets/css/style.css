@@ -1860,20 +1860,21 @@ body.demo-page { overflow: hidden; height: 100vh; }
 }
 
 .win-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: #1a3468;
+  border: 1px solid #2a4a7f;
   border-radius: var(--radius);
   padding: 0;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
   transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
 .win-card:hover {
   border-color: var(--primary);
-  box-shadow: 0 4px 24px rgba(59,130,246,0.15);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(59,130,246,0.2);
+  transform: translateY(-3px);
 }
 
 .win-card-accent {
@@ -1914,7 +1915,7 @@ body.demo-page { overflow: hidden; height: 100vh; }
   gap: 8px;
   flex-wrap: wrap;
   padding-top: 12px;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid rgba(255,255,255,0.08);
   margin-top: auto;
 }
 
