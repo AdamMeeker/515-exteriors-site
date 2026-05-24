@@ -1680,3 +1680,167 @@ body.demo-page { overflow: hidden; height: 100vh; }
   .acculynx-callout, .day-card { padding: 32px 24px; }
   .acculynx-features { grid-template-columns: 1fr; }
 }
+
+/* =========================================================
+   Roadmap / Phase Tabs — The Plan section
+   ========================================================= */
+
+#roadmap { padding: 96px 0; }
+
+.phase-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 40px 0 32px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0;
+}
+
+.phase-tab {
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--muted-strong);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: -1px;
+  padding: 10px 20px 13px;
+  transition: color 0.18s, border-color 0.18s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.phase-tab:hover { color: var(--text); }
+
+.phase-tab.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.tab-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.phase-panel { display: none; }
+.phase-panel.active { display: block; }
+
+.phase-header {
+  margin-bottom: 32px;
+}
+
+.phase-header-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.phase-timeline {
+  font-size: 0.82rem;
+  color: var(--muted-strong);
+  font-weight: 500;
+}
+
+.phase-desc {
+  color: var(--text-soft);
+  font-size: 1rem;
+  max-width: 640px;
+  line-height: 1.65;
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.roadmap-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.roadmap-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow);
+}
+
+.roadmap-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.roadmap-card p {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  line-height: 1.6;
+  flex: 1;
+  margin: 0;
+}
+
+.phase-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 20px;
+  line-height: 1.6;
+}
+
+.phase-badge.p1 {
+  background: var(--green-soft);
+  color: var(--green);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+
+.phase-badge.p2 {
+  background: var(--primary-glow);
+  color: #60a5fa;
+  border: 1px solid rgba(33, 94, 209, 0.3);
+}
+
+.phase-badge.p3 {
+  background: var(--amber-soft);
+  color: var(--amber);
+  border: 1px solid rgba(255, 202, 27, 0.25);
+}
+
+.phase-badge.p4 {
+  background: var(--purple-soft);
+  color: var(--purple);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+}
+
+.time-pill {
+  display: inline-block;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--muted-strong);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  margin-top: 4px;
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .roadmap-grid { grid-template-columns: 1fr; }
+  .phase-tab { padding: 8px 14px 11px; font-size: 0.82rem; }
+}
