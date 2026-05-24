@@ -1923,8 +1923,8 @@ body.demo-page { overflow: hidden; height: 100vh; }
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background: rgba(59, 130, 246, 0.12);
-  color: var(--primary);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
   border-radius: 20px;
   padding: 3px 10px;
   font-size: 0.72rem;
