@@ -1844,3 +1844,120 @@ body.demo-page { overflow: hidden; height: 100vh; }
   .roadmap-grid { grid-template-columns: 1fr; }
   .phase-tab { padding: 8px 14px 11px; font-size: 0.82rem; }
 }
+
+/* ============== Quick Wins Grid ============== */
+.wins-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .wins-grid { grid-template-columns: 1fr; }
+}
+
+.win-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.win-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow);
+}
+
+.win-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.win-card p {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  line-height: 1.6;
+  flex: 1;
+  margin: 0;
+}
+
+.time-badge {
+  display: inline-block;
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--primary);
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.win-outcome {
+  color: var(--green, #22c55e);
+  font-size: 0.85rem;
+  margin-top: 8px;
+  display: block;
+  font-weight: 500;
+}
+
+/* ============== Intel Callout ============== */
+.intel-callout {
+  border-left: 4px solid #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin: 24px auto;
+  max-width: 720px;
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* ============== Pain Grid (2-col) ============== */
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .pain-grid { grid-template-columns: 1fr; }
+}
+
+/* ============== Why Grid (3-col) ============== */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.why-card {
+  padding: 36px 32px;
+  text-align: center;
+}
+
+.why-icon {
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.why-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.why-card p {
+  color: var(--muted-strong);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .why-grid { grid-template-columns: 1fr; }
+}
