@@ -288,10 +288,7 @@ h2.section-title {
   color: var(--text);
 }
 .hero h1 .accent {
-  background: linear-gradient(135deg, #ffca1b 0%, #ffd84d 60%, #fff3a3 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent);
 }
 .hero p.subhead {
   font-size: 1.25rem;
