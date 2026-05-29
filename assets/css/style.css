@@ -194,10 +194,7 @@ h2.section-title {
   font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #ffca1b 0%, #fff3a3 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
 }
 .logo-sub {
   font-size: 0.65rem;
@@ -288,10 +285,7 @@ h2.section-title {
   line-height: 1.05;
   max-width: 980px;
   margin: 0 auto 28px;
-  background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text);
 }
 .hero h1 .accent {
   background: linear-gradient(135deg, #ffca1b 0%, #ffd84d 60%, #fff3a3 100%);
@@ -327,10 +321,7 @@ h2.section-title {
   font-size: 2.4rem;
   font-weight: 800;
   letter-spacing: -0.03em;
-  background: linear-gradient(135deg, #fff 0%, #93c5fd 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
   line-height: 1;
 }
 .hero-stat-label {
@@ -510,10 +501,7 @@ h2.section-title {
 .clock-num {
   font-size: 2.4rem;
   letter-spacing: -0.03em;
-  background: linear-gradient(135deg, #fff 0%, #93c5fd 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
 }
 .clock-label {
   font-size: 0.7rem;
@@ -798,10 +786,7 @@ h2.section-title {
   font-size: 2.2rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #fff 0%, #93c5fd 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
 }
 .tile-trend {
   display: inline-flex;
